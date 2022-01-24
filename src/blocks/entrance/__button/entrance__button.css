@@ -1,0 +1,21 @@
+.entrance__button,
+.register__button {
+  cursor: pointer;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  height: 40px;
+  background-color: #3a67a7;
+}
+
+.entrance__button:hover,
+.register__button:hover {
+  background-color: #23395a;
+  transition: .4s;
+}
+
+.entrance__button:focus,
+.register__button:focus {
+  outline-color: greenyellow;
+}

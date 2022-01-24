@@ -1,0 +1,9 @@
+.entrance__title,
+.register__title {
+  margin: 0 0 20px;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+}

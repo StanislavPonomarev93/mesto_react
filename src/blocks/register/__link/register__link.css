@@ -1,0 +1,9 @@
+.register__link,
+.entrance__link {
+  color: #3488c0;
+}
+
+.register__link:hover,
+.entrance__link:hover {
+  color: #22587c;
+}

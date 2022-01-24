@@ -1,0 +1,11 @@
+.user-info__search-icon {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  width: 30px;
+  margin: 80px 0 0 62px;
+}
+
+.user-info__photo:hover .user-info__search-icon {
+  display: block;
+}

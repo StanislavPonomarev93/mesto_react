@@ -1,0 +1,11 @@
+.user-info__avatar-icon {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  width: 30px;
+  margin: 30px 0 0 60px;
+}
+
+.user-info__photo:hover .user-info__avatar-icon {
+  display: block;
+}
