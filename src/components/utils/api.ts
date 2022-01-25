@@ -102,7 +102,7 @@ class MestoApi {
 
 export const mestoApi = new MestoApi(
   {
-    baseUrl: 'http://nomoreparties.co/cohort12',
+    baseUrl: 'https://nomoreparties.co/cohort12',
     BASE_URL: 'https://api.nomoreparties.co',
     token: {
       headers: {
