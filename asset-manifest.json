@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mesto_react/static/css/main.b1e1ad59.css",
-    "main.js": "/mesto_react/static/js/main.09c50f52.js",
+    "main.js": "/mesto_react/static/js/main.edf2ad37.js",
     "static/media/author.jpg": "/mesto_react/static/media/author.a469dd2ac136ca6540d8.jpg",
     "static/media/Inter-Black.woff2": "/mesto_react/static/media/Inter-Black.8d07d4e4ea9833df9373.woff2",
     "static/media/Inter-Regular.woff2": "/mesto_react/static/media/Inter-Regular.dcba3388310e6ae77440.woff2",
@@ -20,10 +20,10 @@
     "index.html": "/mesto_react/index.html",
     "static/media/close.svg": "/mesto_react/static/media/close.888d78eb885c525f5e004f89529f8a26.svg",
     "main.b1e1ad59.css.map": "/mesto_react/static/css/main.b1e1ad59.css.map",
-    "main.09c50f52.js.map": "/mesto_react/static/js/main.09c50f52.js.map"
+    "main.edf2ad37.js.map": "/mesto_react/static/js/main.edf2ad37.js.map"
   },
   "entrypoints": [
     "static/css/main.b1e1ad59.css",
-    "static/js/main.09c50f52.js"
+    "static/js/main.edf2ad37.js"
   ]
 }
