@@ -1,6 +1,6 @@
-<h2 style="text-align:center; color: #f2a44b; font-size: 30px">Mesto (React)</h2>
-<p style="text-align:center; font-size: 18px; color: #0f8755">Интерактивный проект по созданию карточек</p>
-<h2 align="center"><a  href="https://stanislavponomarev93.github.io/mesto_react/">Live Demo</a></h2>
+<h1 align="center">Mesto (React)</h1>
+<h3 align="center">Интерактивный проект по созданию карточек</h3>
+<h3 align="center"><a  href="https://stanislavponomarev93.github.io/mesto_react/">Live Demo</a></h3>
 <p>
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=2361DAFB)
@@ -10,11 +10,11 @@
 
 ___
 
-<h2 style="color: #f2a44b; font-size: 25px; line-height: 50px">Описание</h2>
+<h1>Описание</h1>
 
-<p style="font-size: 20px; margin: 50px 0 20px 20px">Редактирование пользователя</p>
+* <h3>Редактирование пользователя</h3>
 
-<p align="center"><img src="./src/readmeData/gif.gif" width="60%"></p>
+<p align="center"><img src="./src/readmeData/User.gif" width="60%"></p>
 
 Запрос на редактирование отправляется в `http://nomoreparties.co/cohort12/users/me`. Ответ сохраняется в глобальном стейте `userData`
 
@@ -32,9 +32,9 @@ builder.addCase(fethcEditUser.fulfilled, (state, action) => {
 });
 ```
 
-<p style="font-size: 20px; margin: 50px 0 20px 20px">Изменение аватара</p>
+* <h3>Изменение аватара</h3>
 
-<p align="center"><img src="./src/readmeData/gif.gif" width="60%"></p>
+<p align="center"><img src="./src/readmeData/Avatar.gif" width="60%"></p>
 
 Запрос на редактирование отправляется в `http://nomoreparties.co/cohort12/users/me/avatar`. Ответ сохраняется в глобальном стейте `userData`.
 
@@ -52,9 +52,9 @@ builder.addCase(fethcEditUserAvatar.fulfilled, (state, action) => {
 });
 ```
 
-<p style="font-size: 20px; margin: 50px 0 20px 20px">Создание новой карточки</p>
+* <h3>Создание новой карточки</ph3>
 
-<p align="center"><img src="./src/readmeData/gif.gif" width="60%"></p>
+<p align="center"><img src="./src/readmeData/Card.gif" width="60%"></p>
 
 POST запрос на добавление новой карточки отправляется в `http://nomoreparties.co/cohort12/cards`. Ответ добавляется в массив уже созданных карточек, которые хранятся в глобальном стейте `cards`.
 
@@ -72,9 +72,7 @@ builder.addCase(fethcAddCard.fulfilled, (state, action) => {
 });
 ```
 
-<p style="font-size: 20px; margin: 50px 0 20px 20px">Удаление карточки</p>
-
-<p align="center"><img src="./src/readmeData/gif.gif" width="60%"></p>
+* <h3>Удаление карточки</h3>
 
 Удаление карточки происходит через запрос DELETE `http://nomoreparties.co/cohort12/cards/cardId`. После ответа карточка удаляется из массива глобального стейта `cards`.
 
@@ -91,9 +89,7 @@ builder.addCase(fethcDeleteCard.fulfilled, (state, action) => {
 });
 ```
 
-<p style="font-size: 20px; margin: 50px 0 20px 20px">Like карточки</p>
-
-<p align="center"><img src="./src/readmeData/gif.gif" width="60%"></p>
+* <h3>Like карточки</h3>
 
 Добавление лайка и удаление отпраляется по url `http://nomoreparties.co/cohort12/cards/like/cardId`. Реализация вынесена в кастомный хук `useLike`.
 
@@ -120,19 +116,27 @@ function useLike(element: CardType): [{ likes: number, liked: boolean }, () => v
 }
 ```
 
-<p style="font-size: 20px; margin: 50px 0 20px 20px">Увеличение картинки</p>
-
-<p align="center">
-<img  src="./src/readmeData/image1.png" width="30%">
-<img  src="./src/readmeData/image2.png" width="30%">
-</p>
+* <h3>Увеличение картинки</h3>
 
 ```TypeScript
 // Добавляется ссылка картинки в созданный попап
 <img src={props.link} alt="" className="popup__image-big" />
 ```
 
-<h2 style="color: #f2a44b; font-size: 25px; line-height: 50px">Локальный запуск проекта</h2>
+<p align="center">
+<img  src="./src/readmeData/image1.png" width="30%">
+<img  src="./src/readmeData/image2.png" width="30%">
+</p>
+
+<h2>Технологии</h2>
+
+* Проект создан через Create React App (CRA)
+* Валидация форм настроена через React Hook Form
+* Хранение глобального стейта реализовано через Redux Toolkit
+* Jwt авторизованного пользователя хранится в localStorage
+* Используются кастомные хуки
+
+<h2>Локальный запуск проекта</h2>
 
 ```
 git clone https://stanislavponomarev93.github.io/mesto_react
